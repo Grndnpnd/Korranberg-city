@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Korranberg Design Tokens */
+    --stone-50: #FBF7F0;
+    --stone-100: #F2EBD9;
+    --stone-200: #E3D5B8;
+    --stone-300: #C4B08D;
+    --stone-400: #9E8766;
+    --stone-500: #7A6548;
+    --stone-600: #5C4A30;
+    --stone-700: #3D3020;
+    --stone-800: #2A2015;
+    --stone-900: #1A130C;
+    --brass-400: #D4AF6A;
+    --brass-500: #B8944A;
+    --brass-600: #8F6F30;
+    --brass-700: #6B5222;
+    --everbright-400: #7EC8E3;
+    --everbright-500: #4AAFD4;
+    --everbright-600: #2E8FB8;
+    --everbright-700: #1E6B8A;
+    --teal-500: #2D9C8C;
+    --teal-600: #1F7A6B;
+    --warm-amber: #D4934A;
+    --deep-crimson: #8B3A3A;
+    --scroll-parchment: #F0E6D0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--stone-50);
+    color: var(--stone-700);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Display serif font for headings */
+  h1, h2, h3 {
+    font-family: '"Cormorant Garamond"', Georgia, serif;
+  }
+}
